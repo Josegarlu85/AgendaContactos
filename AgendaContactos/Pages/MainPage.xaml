@@ -1,0 +1,39 @@
+<ContentPage
+    x:Class="AgendaContactos.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#121212">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Bienvenido a tu Agenda de Contactos"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="White" />
+
+        <Label Text="Selecciona un color de fondo:"
+               FontSize="16"
+               TextColor="White"
+               Margin="0,10,0,0" />
+
+        <Frame BackgroundColor="#FFFFFF"
+               CornerRadius="8"
+               Padding="5"
+               HasShadow="False">
+
+            <Picker x:Name="ColorPicker"
+                    Title="Color de fondo"
+                    TextColor="Black"
+                    BackgroundColor="#FFFFFF"
+                    FontSize="14">
+                <Picker.Items>
+                    <x:String>Rojo</x:String>
+                    <x:String>Azul</x:String>
+                    <x:String>Verde</x:String>
+                </Picker.Items>
+            </Picker>
+
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

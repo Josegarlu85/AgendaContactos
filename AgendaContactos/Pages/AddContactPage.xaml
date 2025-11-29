@@ -1,0 +1,22 @@
+<ContentPage
+    x:Class="AgendaContactos.Pages.AddContactPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#121212">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <Entry x:Name="NombreEntry" Placeholder="Nombre"
+               TextColor="White" PlaceholderColor="#AAAAAA" BackgroundColor="#1E1E1E" />
+        <Entry x:Name="ApellidosEntry" Placeholder="Apellidos"
+               TextColor="White" PlaceholderColor="#AAAAAA" BackgroundColor="#1E1E1E" />
+        <Entry x:Name="TelefonoEntry" Placeholder="Teléfono" Keyboard="Telephone"
+               TextColor="White" PlaceholderColor="#AAAAAA" BackgroundColor="#1E1E1E" />
+        <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email"
+               TextColor="White" PlaceholderColor="#AAAAAA" BackgroundColor="#1E1E1E" />
+
+        <Button Text="Guardar" Clicked="OnGuardarClicked"
+                BackgroundColor="#333333" TextColor="White" />
+
+    </VerticalStackLayout>
+</ContentPage>
