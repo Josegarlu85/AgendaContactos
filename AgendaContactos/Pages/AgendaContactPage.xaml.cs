@@ -30,9 +30,15 @@ public partial class AgendaContactPage : ContentPage
         string nuevoTelefono = await DisplayPromptAsync("Modificar", "Nuevo teléfono:", initialValue: c.Telefono);
         string nuevoEmail = await DisplayPromptAsync("Modificar", "Nuevo email:", initialValue: c.Email);
 
-        // ? Validar que no se canceló
-        if (nuevoNombre is null || nuevosApellidos is null || nuevoTelefono is null || nuevoEmail is null)
+        if (string.IsNullOrWhiteSpace(nuevoNombre) ||
+      string.IsNullOrWhiteSpace(nuevosApellidos) ||
+      string.IsNullOrWhiteSpace(nuevoTelefono) ||
+      string.IsNullOrWhiteSpace(nuevoEmail))
+        {
+            await DisplayAlert("Error", "Todos los campos deben tener un valor", "OK");
             return;
+        }
+
 
         // ? Actualizar el contacto
         c.Nombre = nuevoNombre;
