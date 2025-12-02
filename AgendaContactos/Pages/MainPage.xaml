@@ -10,6 +10,10 @@
                FontSize="24"
                HorizontalOptions="Center"
                TextColor="White" />
+        <Image Source="cont.jpg"
+               HeightRequest="200"
+               WidthRequest="200"
+               Aspect="AspectFit" />
 
         <Label Text="Selecciona un color de fondo:"
                FontSize="16"

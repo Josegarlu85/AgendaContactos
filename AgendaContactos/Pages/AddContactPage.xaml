@@ -16,7 +16,7 @@
                TextColor="White" PlaceholderColor="#AAAAAA" BackgroundColor="#1E1E1E" />
 
         <Button Text="Guardar" Clicked="OnGuardarClicked"
-                BackgroundColor="#333333" TextColor="White" />
+                BackgroundColor="Green" TextColor="White" />
 
     </VerticalStackLayout>
 </ContentPage>

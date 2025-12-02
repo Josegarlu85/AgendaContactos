@@ -23,9 +23,9 @@
 
         <HorizontalStackLayout Spacing="10">
             <Button Text="Modificar" Clicked="OnModificarClicked"
-                    BackgroundColor="#333333" TextColor="White" />
+                    BackgroundColor="Blue" TextColor="White" />
             <Button Text="Borrar" Clicked="OnBorrarClicked"
-                    BackgroundColor="#333333" TextColor="White" />
+                    BackgroundColor="Red" TextColor="White" />
         </HorizontalStackLayout>
 
     </VerticalStackLayout>
